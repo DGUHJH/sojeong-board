@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title> 개체연습 </title>
+</head>
+
+<body>
+  <center>
+    <h1>마지막 페이지는 개체연습입니다.</h1>
+    <hr>
+    <button onclick="location.replace('10일차_과제3.html')"> 이전 페이지</button>
+    <button onclick="location.replace('10일차_과제2.html')"> 처음 페이지 </button>
+    <hr>
+    <script language="javascript">
+      var subject = [];
+      subject[0] = "자료구조";
+      subject[1] = "데이터베이스";
+      subject[2] = "알고리즘";
+      subject[3] = "운영체제";
+      var str1 = "JAVASCRIPT";
+      var str2 = "web programming";
+      var str3 = "컴퓨터개론";
+      var str4 = subject;
+      
+      document.write("JAVASCRIPT의 문자개수:" + str1.length + "<br>");
+      document.write("컴퓨터개론의 문자개수:" + str3.length + "<hr>");
+      document.write("소문자로 문자열 변환하기:" + str1.toLowerCase() + "<br>");
+      document.write("대문자로 문자열 변환하기:" + str2.toUpperCase() + "<hr>");
+      document.write("배열 출력:" + str4.contact + "<br>");
+      document.write("분리자가 변경된 배열 출력:" + "" + "<hr>");
+
+      document.write("[반복문으로 배열 subject 출력]" + "<br><br>");
+
+      for (var i = 0; i < 4; i++) {
+        document.write(subject[i]);
+      }
+
+    </script>
+  </center>
+</body>
+
+</html>
